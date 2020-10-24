@@ -12,7 +12,11 @@ app.use(bodyParser.urlencoded({extended: true}));
 app.use(express.static('public'));
 app.set('view engine', 'ejs');
 
-let [dailyTemps, dates, iconURLS, descriptions, formattedQuery] = []; 
+let dailyTemps = []; 
+let dates = [];
+let iconURLS = [];
+let descriptions = [];
+let formattedQuery = '';
 
 app.get('/', function(req, res) {
 
@@ -88,5 +92,9 @@ app.listen(process.env.PORT || 3000, function() {
 })
 
 function wipeWeatherData() {
-    [dailyTemps, daaates, iconURLS, descriptions, formattedQuery] = [];
+    dailyTemps = []; 
+    dates = [];
+    iconURLS = [];
+    descriptions = [];
+    formattedQuery = '';
 }

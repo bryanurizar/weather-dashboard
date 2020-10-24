@@ -1,0 +1,192 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-family: 'Questrial', sans-serif;
+    letter-spacing: 5px;
+    background-color: #1b262c;
+    height: 100vh;
+    color: white;
+}
+
+h1 {
+    font-size: 40px;
+    display: inline;
+    vertical-align: middle;
+}
+
+h3 {
+    padding: 10px;
+    font-size: 25px;
+}
+
+form {
+    display: inline;
+    vertical-align: center;
+}
+
+p {
+    font-size: 50px;
+}
+
+input {
+    padding-left: 5px;
+    font-size: 15px;
+    height: 40px;
+    width: 300px;
+    border-color: black;
+    border-radius: 5px;
+    border-style: none;
+}
+
+button {
+    height: 40px;
+    width: 125px;
+    border-radius: 5px;
+    border-style: none;
+    background-color: white;
+}
+
+button:hover {
+    box-shadow: 0 0px 5px white;
+}
+
+form {
+    margin: 0;
+    float: right;
+    padding: 0;
+    height: auto;
+}
+
+nav {
+    padding: 2% 3.5%;
+}
+
+.container {
+    padding: 2%;
+    text-align: center;
+}
+
+.days {
+    text-align: center;
+    display: inline-block;
+    height: 550px;
+    width: 300px;
+    margin: 10px;
+    border: grey;
+    border-radius: 30px;
+    box-shadow: 0 4px 10px black;
+    transition: width 0.5s ease-in-out;
+}
+
+.days:first-child {
+    margin-left: 0;
+}
+
+.days:last-child {
+    margin-right: 0;
+}
+
+.days:hover {
+    width: 315px;
+    box-shadow: 0 0px 10px white;
+    border-color: black;
+    border-style: none;
+}
+
+.start {
+    font-size: 40px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.location {
+    padding-top: 10px;
+}
+
+.descriptions {
+      font-size: 16px;
+      padding: 10px;
+}
+
+.temperature {
+      padding: 10px;
+      font-weight: 600;
+}
+
+.information {
+      margin-top: 45%;
+      text-align: center;
+}
+
+@media only screen and (max-width: 930px) {
+    form {
+        display: block;
+        float: none;
+    }
+
+    input {
+        margin-top: 2%;
+        width: 100%;
+    }
+
+    #search-button {
+        display: none;
+    }
+  }
+
+  .fade-in:not([name="no-fade"]) {
+    animation: fadeIn ease 2s;
+    -webkit-animation: fadeIn ease 2s;
+    -moz-animation: fadeIn ease 2s;
+    -o-animation: fadeIn ease 2s;
+    -ms-animation: fadeIn ease 2s;
+  }
+  @keyframes fadeIn {
+    0% {
+      opacity:0;
+    }
+    100% {
+      opacity:1;
+    }
+  }
+  
+  @-moz-keyframes fadeIn {
+    0% {
+      opacity:0;
+    }
+    100% {
+      opacity:1;
+    }
+  }
+  
+  @-webkit-keyframes fadeIn {
+    0% {
+      opacity:0;
+    }
+    100% {
+      opacity:1;
+    }
+  }
+  
+  @-o-keyframes fadeIn {
+    0% {
+      opacity:0;
+    }
+    100% {
+      opacity:1;
+    }
+  }
+  
+  @-ms-keyframes fadeIn {
+    0% {
+      opacity:0;
+    }
+    100% {
+      opacity:1;
+    }
+  } 

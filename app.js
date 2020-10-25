@@ -12,7 +12,7 @@ app.use(bodyParser.urlencoded({extended: true}));
 app.use(express.static('public'));
 app.set('view engine', 'ejs');
 
-let dailyTemps = []; 
+let dailyTemps = [];
 let dates = [];
 let iconURLS = [];
 let descriptions = [];

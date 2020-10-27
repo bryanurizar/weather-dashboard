@@ -61,22 +61,22 @@ nav {
 .container {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
-  align-content: center;
   text-align: center;
   padding: 2%;
 }
 
 .days {
   flex-grow: 1;
-  margin: 10px;
+  margin: 1%;
   border: grey;
   border-radius: 30px;
   box-shadow: 0 4px 10px black;
   transition: width 0.5s ease-in-out;
+  width: 0;
 }
 
 .days:hover {
+  width: 1%;
   box-shadow: 0 0px 10px white;
   border-color: black;
   border-style: none;
@@ -90,7 +90,7 @@ nav {
   font-size: 50px;
 }
 
-.start {
+.search-prompt, .error {
   font-size: 40px;
   position: absolute;
   top: 50%;
@@ -99,10 +99,10 @@ nav {
 }
 
 .location {
-  padding-top: 10px;
+  padding-top: 15px;
 }
 
-.descriptions {
+.weather-description {
   font-size: 16px;
   padding: 10px;
 }

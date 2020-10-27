@@ -26,7 +26,7 @@
     <section class="container">
 
         <% if (dates.length === 0) { %>
-                <p class='start fade-in'>Please search for a city..</p>
+                <p class='search-prompt fade-in'>Please search for a city..</p>
 
         <% } else { %>
             <% for (let i = 0; i < 5; i++) { %>
@@ -36,7 +36,7 @@
                             <h2> <%= dates[i] %> </h2>
                             <p class="temperature fade-in"><%= dailyTemps[i] %> </p>
                             <img src=<%=iconURLS[i]%> alt="">
-                            <p class="descriptions fade-in"><%= descriptions[i] %> </p>
+                            <p class="weather-description fade-in"><%= descriptions[i] %> </p>
                         </div>
                     </div>
                 </div>

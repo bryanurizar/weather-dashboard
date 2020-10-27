@@ -14,25 +14,15 @@ html {
 h1 {
   font-size: 40px;
   display: inline;
-  vertical-align: middle;
 }
 
 h2 {
   font-size: 20px;
 }
 
-h3 {
-  padding: 10px;
-  font-size: 20px;
-}
-
 form {
   display: inline;
   vertical-align: center;
-}
-
-p {
-  font-size: 50px;
 }
 
 input {
@@ -72,14 +62,13 @@ nav {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  align-content: center;
+  text-align: center;
   padding: 2%;
 }
 
 .days {
-  display: flex;
   flex-grow: 1;
-  text-align: center;
-  height: 550px;
   margin: 10px;
   border: grey;
   border-radius: 30px;
@@ -91,6 +80,14 @@ nav {
   box-shadow: 0 0px 10px white;
   border-color: black;
   border-style: none;
+}
+
+.information-container{
+  padding: 40% 15%;
+}
+
+.temperature {
+  font-size: 50px;
 }
 
 .start {

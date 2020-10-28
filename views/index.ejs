@@ -32,12 +32,10 @@
             <% for (let i = 0; i < 5; i++) { %>
                 <div class="days">
                     <div class="information-container fade-in">
-                        <div class="information">
-                            <h2> <%= dates[i] %> </h2>
-                            <p class="temperature fade-in"><%= dailyTemps[i] %> </p>
-                            <img src=<%=iconURLS[i]%> alt="">
-                            <p class="weather-description fade-in"><%= descriptions[i] %> </p>
-                        </div>
+                        <h2> <%= dates[i] %> </h2>
+                        <p class="temperature fade-in"><%= dailyTemps[i] %> </p>
+                        <img src=<%=iconURLS[i]%> alt="">
+                        <p class="weather-description fade-in"><%= descriptions[i] %> </p>
                     </div>
                 </div>
             <% } %>

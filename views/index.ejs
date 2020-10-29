@@ -31,10 +31,10 @@
         <% } else { %>
             <% for (let i = 0; i < 5; i++) { %>
                 <div class="days">
-                    <div class="information-container fade-in">
-                        <h2> <%= dates[i] %> </h2>
+                    <div class="info-container">
+                        <h2 class="date"> <%= dates[i] %> </h2>
                         <p class="temperature fade-in"><%= dailyTemps[i] %> </p>
-                        <img src=<%=iconURLS[i]%> alt="">
+                        <img class="icon" src=<%=iconURLS[i]%> alt="">
                         <p class="weather-description fade-in"><%= descriptions[i] %> </p>
                     </div>
                 </div>

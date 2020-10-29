@@ -1,13 +1,13 @@
 * {
   margin: 0;
   padding: 0;
+  
 }
 
 html {
   font-family: 'Questrial', sans-serif;
   letter-spacing: 5px;
   background-color: #1b262c;
-  height: 100vh;
   color: white;
 }
 
@@ -17,7 +17,9 @@ h1 {
 }
 
 h2 {
-  font-size: 20px;
+  margin-top: 5px;
+  font-size: 18px;
+  margin-bottom: 8px;
 }
 
 form {
@@ -36,6 +38,7 @@ input {
 }
 
 button {
+  font-size: 15px;
   height: 40px;
   width: 125px;
   border-radius: 5px;
@@ -60,34 +63,48 @@ nav {
 
 .container {
   display: flex;
-  flex-wrap: wrap;
+  justify-content: center;
+  align-content: center;
   text-align: center;
-  padding: 2%;
+  flex-wrap:wrap;
 }
 
 .days {
-  flex-grow: 1;
-  margin: 1%;
+  flex: 1;
+  margin: 1.5%;
   border: grey;
   border-radius: 30px;
   box-shadow: 0 4px 10px black;
-  transition: width 0.5s ease-in-out;
-  width: 0;
 }
 
 .days:hover {
-  width: 1%;
   box-shadow: 0 0px 10px white;
   border-color: black;
   border-style: none;
 }
 
-.information-container{
-  padding: 40% 15%;
+.days:first-child {
+  margin-left: 3%;
+}
+
+.days:last-child {
+  margin-right: 3%;
+}
+
+.info-container {
+  margin: 30% 25px;
 }
 
 .temperature {
   font-size: 50px;
+  padding: 10px;
+  font-weight: 600;
+  text-align: center;
+}
+
+.weather-description {
+  font-size: 16px;
+  padding: 10px;
 }
 
 .search-prompt, .error {
@@ -96,20 +113,6 @@ nav {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-}
-
-.location {
-  padding-top: 15px;
-}
-
-.weather-description {
-  font-size: 16px;
-  padding: 10px;
-}
-
-.temperature {
-  padding: 10px;
-  font-weight: 600;
 }
 
 @media only screen and (max-width: 930px) {

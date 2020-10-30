@@ -82,7 +82,7 @@ app.post('/', function(req, res) {
         res.redirect('/');
     })
 
-    .catch(error=> {
+    .catch(error => {
         res.render('error');
     })
 })

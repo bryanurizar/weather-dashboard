@@ -5,6 +5,5 @@ A minimalistic weather dashboard allowing for a user to search for a location an
 HTML, CSS, JavaScript, Node, Express, & Axios
 
 # APIs Used
-Open Weather API - https://openweathermap.org/api
-Open Cage Geocoder - https://opencagedata.com/api
-
+- Open Weather API - https://openweathermap.org/api
+- Open Cage Geocoder - https://opencagedata.com/api
